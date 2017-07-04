@@ -2254,6 +2254,13 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	margin-left: 0.5em;
 }
 
+/* Custom Post Classes (MM) */
+
+.legenda {
+	font-size: 0.8em;
+	font-style: italic;
+}
+
 /*--------------------------------------------------------------
 13.5 Pages
 --------------------------------------------------------------*/
@@ -4280,3 +4287,4 @@ object {
 		padding: 0;
 	}
 }
+
