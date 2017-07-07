@@ -18,7 +18,7 @@
 		echo twentyseventeen_get_svg( array( 'icon' => 'thumb-tack' ) );
 	endif;
 	?>
-	<header class="entry-header">
+	<div class="entry-header">
 		<?php
 		if ( is_single() ) {
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -42,12 +42,13 @@
 			*/
 		?>
 			<div class="entry-meta">
-				<span>Publicado em <?php the_time("d/m/Y"); ?></span>
+				<span>Publicado em <?php the_date("d/m/Y"); ?> na categoria <?php the_category(""); ?></span><br/>
+				<span><?php comments_number("Nenhum comentário", "1 comentário", "%s comentários"); ?></span>
 			</div><!-- .entry-meta -->
 		<?php
 		};
 		?>
-	</header><!-- .entry-header -->
+	</div><!-- .entry-header -->
 
 	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
 		<div class="post-thumbnail">
